@@ -2,13 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-   entry: './src/index.js',
-   output: {
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-module: {
+  module: {
     rules: [
       {
         test: /\.css$/i,
@@ -18,9 +18,9 @@ module: {
   },
   plugins: [
     new HtmlWebpackPlugin({
-     title: 'Output Management',
-     filename: 'index.html',
-     template: './src/index.html',
+      title: 'Output Management',
+      filename: 'index.html',
+      template: './src/index.html',
     }),
   ],
 };
