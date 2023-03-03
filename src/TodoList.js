@@ -14,8 +14,8 @@ if (myDataGet != null) {
 const DisplayData = () => {
   let myDataDisplay = '';
   myData.forEach((user, i) => {
-    myDataDisplay += `<div class="myitems"><li class="my-list"><input type="checkbox" class="checkbox" ${user.completed ? 'unchecked' : ''}>
-       <input type="text" id="myPrintText" onclick="myEditAble(${i})" value='${user.name}'></input></li><i class="material-icons" id="mydotico" onclick="myDataRemove(${i})">delete_forever</i></div>`;
+    myDataDisplay += `<div class="myitems"><li class="my-list"><input type="checkbox" class="checkbox" ${user.completed}>
+       <input type="text" id="myPrintText" class='printdata' value='${user.name}'></input></li><i class="material-icons" id="mydotico" onclick="myDataRemove(${i})">delete_forever</i></div>`;
   });
   myListHolder.innerHTML = myDataDisplay;
 };
@@ -37,7 +37,8 @@ myTitle.addEventListener('keyup', (event) => {
     myDataAdd();
   }
 });
-/* eslint-disable */ // my remove function 
+/* eslint-disable 
+*/ // my remove function 
 myDataRemove = (id) => {
   myData.splice(id, 1);
   mySaveData(myData);
@@ -47,5 +48,47 @@ myDataRemove = (id) => {
     mySaveData(myData);
    } 
 };
- 
+const myDataPrint = document.querySelectorAll('.printdata')
+const checkbox = document.querySelectorAll('.checkbox');
+for(let i = 0; i < myData.length; i+=1) {
 
+myCheckBoxValue = () => {
+ if(checkbox[i].checked) {
+  console.log('checkbox is on')
+  myData[i].completed = `checked`;
+  myDataPrint[i].style.textDecorationLine = 'line-through';
+  mySaveData(myData);
+
+
+ } else {
+  console.log('check is off')
+  myData[i].completed = `unchecked`;
+  myDataPrint[i].style.textDecorationLine = 'none';
+  mySaveData(myData);
+
+ }
+};
+checkbox[i].addEventListener('click', myCheckBoxValue)
+}
+
+
+
+for(let i = 0; i < myData.length; i+=1) {
+  if(myData[i].completed ===  `checked`) {
+    myDataPrint[i].style.textDecorationLine = 'line-through';
+  } else {
+    myDataPrint[i].style.textDecorationLine = 'none';
+  }
+}
+
+/* const myClearTask = document.getElementById('mycleartast');
+for(let i = 0; i < myData.length; i+=1) {
+myDataClear = () => {
+ if(myData[i].completed === `checked`) {
+  let mySplice = myData.splice(1,2,3, 1)
+  mySaveData(myData);
+
+ }
+}
+myClearTask.addEventListener('click', myDataClear)
+} */
