@@ -43,6 +43,7 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+  - [🔭 Future Features](#future-features)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -53,7 +54,11 @@ After you're finished please remove all the comments and instructions!
 # 📖 [Todo List] <a name="about-project"></a>
 
 > This is Todo List Project. We used _HTML, CSS & JAVASCRIPT_ to create this Todo List Project.
+<!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> - [Live Demo Link](https://atril33.github.io/Todo_List_ES6/dist/)
 **[Todo List]**
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -97,7 +102,9 @@ _ **[javascript functions, localStroage, objects, arrays, variables, etc]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
 
+> Add interaction such as check for the duplicate entry before adding in to-do in the app
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
