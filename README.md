@@ -173,6 +173,9 @@ Example:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors">Syed</a>
+# <a name="authors">Syed Atril</a>
+👤 **Syed Atril**
+
 
 > This Project is created by Syed Atril
 
@@ -180,8 +183,7 @@ Example:
 - HTML
 - CSS
 - JAVASCRIPT
-# <a name="authors">Syed Atril</a>
-👤 **Syed Atril**
+
 
 - GitHub: [@githubhandle](https://github.com/Atril33)
 - Twitter: [@twitterhandle](https://twitter.com/AtrilSyed)
